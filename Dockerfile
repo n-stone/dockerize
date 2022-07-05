@@ -9,7 +9,7 @@ RUN go mod tidy
 RUN go install
 
 FROM alpine:3.15
-LABEL MAINTAINER="Jason Wilder <mail@jasonwilder.com>"
+LABEL MAINTAINER="Nils Stein <social.nstein@mailbox.org>"
 
 COPY --from=binary /go/bin/dockerize /usr/local/bin
 
